@@ -1,0 +1,39 @@
+-----Criar o projeto-------
+python -m venv envenv
+env\Scripts\activate
+pip install django
+pip install djangorestframework
+
+django-admin startproject administracao .
+python manage.py startapp banco
+
+colocar o 'loja', rest_framework no seetings
+py manage.py migrate - 1° Criar as estruturas no banco de dados - criar o banco
+py manage.py createsuperuser- 2° Criar admin
+py manage.py runserver - 3° Rodar o servidor 
+Criar os modelos na loja
+
+
+X:\2 semestre\Django\aula4>python -m venv env
+
+X:\2 semestre\Django\aula4>cd env\Scripts\
+
+X:\2 semestre\Django\aula4\env>cd Scripts
+
+X:\2 semestre\Django\aula4\env\Scripts>activate
+
+(env) X:\2 semestre\Django\aula4\env\Scripts>cd ..
+
+(env) X:\2 semestre\Django\aula4\env>cd ..
+
+py manage.py runserver // para iniciar
+py manage.py makemigrations
+
+ 
+teste:
+python -m pip install django-cors-headers
+pip install -U djangorestframework_simplejwt
+pip install -U djoser
+pip install django-cors-headers
+npm install axios
+
